@@ -80,8 +80,9 @@ h2.t{font-size:clamp(26px,4vw,36px);line-height:1.2;text-align:center;margin-bot
 .ind{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .ind span{background:#fff;border-radius:8px;padding:14px 22px;font-weight:600;font-size:15px}
 /* animated demo */
-.demo{position:relative;background:#fff;border:1px solid #E3E6EF;border-radius:20px;max-width:800px;margin:0 auto;height:420px;box-shadow:0 24px 60px rgba(62,106,225,.2);overflow:hidden;text-align:left}
-.dm{position:absolute;left:0;top:0;width:640px;height:420px;transform-origin:0 0}
+.demoframe{max-width:824px;margin:0 auto;padding:12px;border-radius:28px;background:linear-gradient(150deg,#BFD0FA 0%,#D8D2F8 55%,#B5C9F8 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 30px 80px rgba(62,106,225,.35),0 0 120px rgba(156,123,232,.25)}
+.demo{position:relative;background:#fff;border-radius:18px;height:440px;overflow:hidden;text-align:left}
+.dm{position:absolute;left:0;top:0;width:640px;height:440px;transform-origin:0 0}
 .dtag{position:absolute;top:12px;right:14px;z-index:3;background:var(--ink);color:#fff;font-size:9px;font-weight:600;letter-spacing:.1em;padding:3px 8px;border-radius:5px}
 @media(min-width:760px){.dtag{font-size:11px;padding:4px 10px}}
 .sc{position:absolute;inset:0;padding:26px 28px;opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s;pointer-events:none}
@@ -142,6 +143,24 @@ h2.t{font-size:clamp(26px,4vw,36px);line-height:1.2;text-align:center;margin-bot
 .art svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .tile h3{font-size:26px;font-weight:600;line-height:1.2;padding:0 14px;margin-bottom:10px}
 .tile p{padding:0 14px;font-size:15px;color:var(--body)}
+.ttl{font-size:22px;font-weight:600;margin-bottom:14px}
+.gl{margin-top:2px}
+.wv path.ar{fill:#4C7BF0 !important;opacity:.12;stroke:none !important;stroke-dasharray:none !important;stroke-dashoffset:0 !important;animation:none !important}
+.mc>b{font-size:14px;font-weight:600}
+.cty{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font-size:12px;color:var(--muted)}
+.cty span{display:flex;align-items:center;gap:5px}
+.cty s{width:8px;height:8px;border-radius:50%;display:block}
+.cty em{font-style:normal;color:#5C7FD6;margin-left:3px}
+.tabs{display:flex;border:1px solid #E3E6EF;border-radius:10px;padding:3px;margin-bottom:14px;font-size:12px;line-height:1.2}
+.tabs span{flex:1;text-align:center;padding:8px 4px;border-radius:7px;color:var(--ink)}
+.tabs .a{border:2px solid #3E6AE1}
+.tb .th,.tb .tr{grid-template-columns:1.7fr .6fr .6fr .8fr .7fr .8fr !important;padding:8px 10px !important;font-size:12.5px !important}
+.sp{width:56px;height:16px;fill:none;stroke:#7D9CF0;stroke-width:1.6;stroke-linejoin:round}
+.it{display:block;width:54px;height:10px;border-radius:5px;background:linear-gradient(90deg,#4C7BF0 0 25%,#F2B63D 25% 50%,#12B5A0 50% 100%)}
+.mb{display:block;background:#7D9CF0;color:#fff;font-size:11px;font-weight:600;text-align:center;border-radius:6px;padding:5px 0;width:62px}
+.tr.hl .mb{background:#3E6AE1}
+.rs{grid-template-columns:1fr 1.5fr 90px !important;font-size:12.5px !important;padding:12px 14px !important;margin-top:10px !important}
+.s1 .dk{font-size:18px}
 footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-size:14px}
 </style>
 </head>
@@ -174,6 +193,7 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 
 <section>
 <div class="wrap">
+<div class="demoframe">
 <div class="demo" id="demo" aria-label="Animated sample of an AI visibility check">
 <div class="dtag">SAMPLE DATA</div>
 <div class="dm" id="dm">
@@ -183,10 +203,10 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 <div class="dq"><div class="dinp"><span id="typed"></span><i class="cur"></i></div><div class="dbtn" id="dbtn">Check AI visibility</div></div>
 </div>
 <div class="sc s2">
-<div class="dk" style="text-align:left;font-size:20px;color:var(--ink);font-weight:600;margin-bottom:18px">Visibility overview</div>
+<div class="ttl">Visibility overview</div>
 <div class="ov">
 <div class="gz">
-<div class="gw"><svg viewBox="0 0 200 118" aria-hidden="true"><path d="M20 108A80 80 0 0 1 180 108" fill="none" stroke="#E8EAF0" stroke-width="16" stroke-linecap="round"/><path id="arc" d="M20 108A80 80 0 0 1 180 108" fill="none" stroke="#E5A100" stroke-width="16" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/></svg>
+<div class="gw"><svg viewBox="0 0 200 118" aria-hidden="true"><defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#12B5A0"/><stop offset="1" stop-color="#3E6AE1"/></linearGradient></defs><path d="M20 108A80 80 0 0 1 180 108" fill="none" stroke="#E8EAF0" stroke-width="16" stroke-linecap="round"/><path id="arc" d="M20 108A80 80 0 0 1 180 108" fill="none" stroke="#E5A100" stroke-width="16" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/><g id="mk" style="transform-origin:100px 108px;transform:rotate(0deg);transition:transform 1.4s cubic-bezier(.3,.7,.2,1)"><path d="M12 108 L2 100 L2 116 Z" fill="#9C7BE8"/></g></svg>
 <div class="gn"><b id="gnum">0</b><span>/100</span></div></div>
 <div class="gl" id="glab">Low</div>
 <div class="gb" id="gbox">Rarely mentioned in AI answers compared to competitors</div>
@@ -194,22 +214,25 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 <div class="gr"><img src="../img/357047aa7430e53c2e3dea3e28682246.png" alt=""><span>AI Overview</span><u><i id="b2"></i></u><em id="n2">0</em></div>
 </div>
 <div class="mt">
-<div class="kp"><div><small><s style="background:#4C7BF0"></s>Mentions</small><b id="k1">0</b></div><div><small><s style="background:#12B5A0"></s>Citations</small><b id="k2">0</b></div><div><small><s style="background:#F2A100"></s>Pages cited</small><b id="k3">0</b></div></div>
-<svg class="wv" viewBox="0 0 400 110" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 60 C40 30 70 80 110 55 S180 30 220 58 S300 85 340 50 S380 40 400 52" stroke="#4C7BF0"/><path pathLength="1" d="M0 82 C50 70 80 95 130 80 S200 62 250 78 S330 98 400 74" stroke="#F2A100"/><path pathLength="1" d="M0 96 C60 100 100 88 150 96 S250 104 300 94 S370 90 400 98" stroke="#12B5A0"/></svg>
-<div class="mc"><small>Mentions by area</small><div class="seg"><i style="--w:46%;background:#F2A100"></i><i style="--w:22%;background:#F7CE6B"></i><i style="--w:12%;background:#9C7BE8"></i><i style="--w:20%;background:#D9C9F6"></i></div></div>
+<div class="kp"><div><small><s style="background:#4C7BF0"></s>Mentions</small><b id="k1">0</b></div><div><small><s style="background:#12B5A0"></s>Citations</small><b id="k2">0</b></div><div><small><s style="background:#F2A100"></s>Cited pages</small><b id="k3">0</b></div></div>
+<svg class="wv" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path class="ar" d="M0 60 C40 30 70 80 110 55 S180 30 220 58 S300 85 340 50 S380 40 400 52 V100 H0 Z" fill="#4C7BF0"/><path pathLength="1" d="M0 60 C40 30 70 80 110 55 S180 30 220 58 S300 85 340 50 S380 40 400 52" stroke="#4C7BF0"/><path pathLength="1" d="M0 74 C50 62 80 88 130 74 S200 56 250 72 S330 92 400 68" stroke="#F2A100"/><path pathLength="1" d="M0 90 C60 94 100 82 150 90 S250 98 300 88 S370 84 400 92" stroke="#12B5A0"/></svg>
+<div class="mc"><b>Mentions by city</b><div class="seg"><i style="--w:46%;background:#F2A100"></i><i style="--w:22%;background:#F7CE6B"></i><i style="--w:12%;background:#9C7BE8"></i><i style="--w:20%;background:#D9C9F6"></i></div>
+<div class="cty"><span><s style="background:#F2A100"></s>Dallas<em>46%</em></span><span><s style="background:#F7CE6B"></s>Austin<em>22%</em></span><span><s style="background:#9C7BE8"></s>Houston<em>12%</em></span><span><s style="background:#D9C9F6"></s>Other<em>20%</em></span></div></div>
 </div>
 </div>
 </div>
 <div class="sc s3">
-<div class="dk" style="text-align:left;font-size:20px;color:var(--ink);font-weight:600;margin-bottom:16px">Topics &amp; sources</div>
+<div class="ttl">Topics &amp; sources</div>
+<div class="tabs"><span class="a">Your performing topics</span><span>Topic opportunities</span><span>Cited sources</span><span>Source opportunities</span><span>Cited pages</span></div>
 <div class="tb">
-<div class="th"><span>Topic</span><span>Visibility</span><span>Mentions</span></div>
-<div class="tr hl" id="tr1"><span>emergency plumber near me</span><span>72</span><span>39</span></div>
-<div class="tr"><span>best roofer in my city</span><span>69</span><span>45</span></div>
-<div class="tr"><span>affordable ac repair</span><span>54</span><span>14</span></div>
-<div class="tr"><span>family dentist open saturday</span><span>37</span><span>12</span></div>
+<div class="th"><span>Topic</span><span>Visibility</span><span>Mentions</span><span>AI volume</span><span>Intent</span><span></span></div>
+<div class="tr hl" id="tr1"><span>emergency plumber near me</span><span>72</span><span>39</span><span><svg class="sp" viewBox="0 0 56 16"><path d="M0 12 L8 6 L16 10 L24 4 L32 9 L40 3 L48 8 L56 5"/></svg></span><span><b class="it"></b></span><span><b class="mb">Monitor</b></span></div>
+<div class="tr"><span>best roofer in my city</span><span>69</span><span>45</span><span><svg class="sp" viewBox="0 0 56 16"><path d="M0 9 L8 11 L16 5 L24 9 L32 4 L40 10 L48 6 L56 9"/></svg></span><span><b class="it"></b></span><span><b class="mb">Monitor</b></span></div>
+<div class="tr"><span>affordable ac repair</span><span>54</span><span>14</span><span><svg class="sp" viewBox="0 0 56 16"><path d="M0 11 L8 4 L16 12 L24 5 L32 11 L40 3 L48 10 L56 4"/></svg></span><span><b class="it"></b></span><span><b class="mb">Monitor</b></span></div>
+<div class="tr"><span>family dentist open saturday</span><span>37</span><span>12</span><span><svg class="sp" viewBox="0 0 56 16"><path d="M0 14 L12 12 L22 7 L32 9 L44 4 L56 3"/></svg></span><span><b class="it"></b></span><span><b class="mb">Monitor</b></span></div>
 </div>
-<div class="rs" id="rs"><div><small>Prompt</small>Who is the best emergency plumber near me?</div><div><small>AI response</small>...some highly rated options include Competitor 1 and Your Business.</div><div><small>Your business</small><b>Mentioned</b></div></div>
+<div class="rs" id="rs"><div><small>Prompt</small>Who is the best emergency plumber near me?</div><div><small>AI response</small>...some highly rated options include Competitor 1 and Your Business.</div><div><small>Your business</small>Mentioned</div></div>
+</div>
 </div>
 </div>
 </div>
@@ -302,18 +325,18 @@ document.getElementById('ok').style.display='block';
 });
 (function(){
 var $=function(i){return document.getElementById(i)};
-function fit(){var d=$('demo'),k=d.clientWidth/640;$('dm').style.transform='scale('+k+')';d.style.height=(420*k)+'px'}
+function fit(){var d=$('demo'),k=d.clientWidth/640;$('dm').style.transform='scale('+k+')';d.style.height=(440*k)+'px'}
 fit();window.addEventListener('resize',fit);
 var sc=document.querySelectorAll('.demo .sc'),arc=$('arc'),T=[],reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function show(n){sc.forEach(function(e,i){e.classList.toggle('on',i===n)})}
 function at(ms,f){T.push(setTimeout(f,ms))}
 function count(el,to,ms){var t0=null,from=parseFloat(el.textContent)||0;function st(t){if(!t0)t0=t;var p=Math.min((t-t0)/ms,1);el.textContent=Math.round(from+(to-from)*p);if(p<1)requestAnimationFrame(st)}requestAnimationFrame(st)}
-function gauge(v,col,label,msg,bg,fg){arc.style.stroke=col;arc.style.strokeDashoffset=251.3*(1-v/100);count($('gnum'),v,1400);$('glab').textContent=label;var b=$('gbox');b.textContent=msg;b.style.background=bg;b.style.color=fg}
+function gauge(v,col,label,msg,bg,fg){$('mk').style.transform='rotate('+(180*v/100)+'deg)';arc.style.stroke=col;arc.style.strokeDashoffset=251.3*(1-v/100);count($('gnum'),v,1400);$('glab').textContent=label;var b=$('gbox');b.textContent=msg;b.style.background=bg;b.style.color=fg}
 function overview(){
-arc.style.strokeDashoffset=251.3;$('gnum').textContent='0';
+arc.style.strokeDashoffset=251.3;$('mk').style.transform='rotate(0deg)';$('gnum').textContent='0';
 ['k1','k2','k3','n1','n2'].forEach(function(i){$(i).textContent='0'});$('b1').style.width='0';$('b2').style.width='0';
 at(300,function(){gauge(34,'#E5A100','Low','Rarely mentioned in AI answers compared to competitors','#FFF3D6','#6B4B00');count($('k1'),42,1400);count($('k2'),61,1400);count($('k3'),38,1400);$('b1').style.width='24%';$('b2').style.width='41%';count($('n1'),12,1200);count($('n2'),29,1200)});
-at(3200,function(){gauge(86,'#3E6AE1','Great','Frequently mentioned and often preferred by AI','#E3F8F4','#0B6B5D');count($('k1'),118,1400);count($('k2'),171,1400);count($('k3'),96,1400);$('b1').style.width='62%';$('b2').style.width='84%';count($('n1'),44,1200);count($('n2'),76,1200)});
+at(3200,function(){gauge(86,'#12B5A0','Great','Frequently mentioned and often preferred by AI','#E3F8F4','#0B6B5D');count($('k1'),118,1400);count($('k2'),171,1400);count($('k3'),96,1400);$('b1').style.width='62%';$('b2').style.width='84%';count($('n1'),44,1200);count($('n2'),76,1200)});
 }
 function run(){
 T.forEach(clearTimeout);T=[];
@@ -328,7 +351,7 @@ at(7600,function(){show(2);$('tr1').classList.add('hl')});
 at(9000,function(){$('rs').classList.add('on')});
 at(13200,run);
 }
-if(reduce){show(1);arc.style.strokeDashoffset=251.3*(1-.86);arc.style.stroke='#3E6AE1';$('gnum').textContent='86';$('glab').textContent='Great';$('gbox').textContent='Frequently mentioned and often preferred by AI';$('k1').textContent='118';$('k2').textContent='171';$('k3').textContent='96';$('b1').style.width='62%';$('b2').style.width='84%';$('n1').textContent='44';$('n2').textContent='76';document.querySelectorAll('.wv path').forEach(function(p){p.style.strokeDashoffset=0});document.querySelectorAll('.seg i').forEach(function(i){i.style.width=i.style.getPropertyValue('--w')})}
+if(reduce){show(1);arc.style.strokeDashoffset=251.3*(1-.86);arc.style.stroke='#12B5A0';$('mk').style.transform='rotate(155deg)';$('gnum').textContent='86';$('glab').textContent='Great';$('gbox').textContent='Frequently mentioned and often preferred by AI';$('k1').textContent='118';$('k2').textContent='171';$('k3').textContent='96';$('b1').style.width='62%';$('b2').style.width='84%';$('n1').textContent='44';$('n2').textContent='76';document.querySelectorAll('.wv path').forEach(function(p){p.style.strokeDashoffset=0});document.querySelectorAll('.seg i').forEach(function(i){i.style.width=i.style.getPropertyValue('--w')})}
 else{var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){run()}else{T.forEach(clearTimeout)}},{threshold:.25});io.observe($('demo'))}
 })();
 </script>
