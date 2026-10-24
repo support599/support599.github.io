@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>OmniRankedAI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:inherit}
+.ph{color:var(--acc);border-bottom:1.5px dotted var(--acc)}
+.phd{color:#FFFFFF;border-bottom:1.5px dotted #FFFFFF}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 28px}
+.faq summary::-webkit-details-marker{display:none}
+.faq .fq{flex:none;width:12px;height:12px;position:relative}
+.faq .fq::before,.faq .fq::after{content:"";position:absolute;left:0;top:5px;width:12px;height:2px;background:#171A20;transition:transform .2s}
+.faq .fq::after{transform:rotate(90deg)}
+.faq[open] .fq::after{transform:rotate(0)}
+.menubtn{display:none !important}
+.navlinks a:hover{color:#FFFFFF}
+
+@media (prefers-reduced-motion: no-preference){
+@supports (animation-timeline: view()){
+@keyframes cardIn{from{opacity:0;transform:translateY(72px) scale(.93);filter:blur(10px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes headIn{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+@keyframes numIn{from{opacity:0;transform:translateY(48px) scale(.7);filter:blur(10px)}to{opacity:1;transform:none;filter:blur(0)}}
+.rv{animation:cardIn linear both;animation-timeline:view();animation-range:entry 4% entry 52%}
+.rv:nth-child(2){animation-range:entry 10% entry 58%}
+.rv:nth-child(3){animation-range:entry 16% entry 64%}
+.rv:nth-child(4){animation-range:entry 22% entry 70%}
+.rv:nth-child(5){animation-range:entry 28% entry 76%}
+.rv2{animation:headIn linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+.num{animation:numIn linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+.num:nth-child(2){animation-range:entry 8% entry 68%}
+.num:nth-child(3){animation-range:entry 16% entry 76%}
+.num:nth-child(4){animation-range:entry 24% entry 84%}
+}
+}
+@media (max-width: 860px){.navlinks{display:none !important}.menubtn{display:flex !important}.hdrcta{display:none !important}}
+</style>
+
+</head>
+<body id="top">
+
+<div style="--acc:#3E6AE1;width:100%;max-width:100%;overflow-x:clip;background:#F4F4F4;color:#171A20;font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.55">
+
+<!-- HEADER -->
+<header style="background:#000000">
+<div style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+<a href="#top" style="text-decoration:none;color:#FFFFFF;display:flex;flex-direction:column;line-height:1">
+<span style="font-family:'Montserrat',system-ui,sans-serif;font-weight:700;font-size:20px;letter-spacing:-0.01em;color:#FFFFFF">OmniRanked<span style="color:#4169E1">AI</span></span>
+<span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#C8C8C8;margin-top:4px">AI search visibility</span>
+</a>
+<nav class="navlinks" aria-label="Main" style="display:flex;gap:32px;font-weight:500;font-size:15px;color:#C8C8C8">
+<a href="#top" style="text-decoration:none">Home</a>
+<a href="#about" style="text-decoration:none">About</a>
+<a href="#services" style="text-decoration:none">Services</a>
+<a href="#why" style="text-decoration:none">Why Us</a>
+<a href="#faq" style="text-decoration:none">FAQs</a>
+<a href="#contact" style="text-decoration:none">Contact Us</a>
+</nav>
+<a class="hdrcta" href="#contact" style="background:var(--acc);color:#FFFFFF;font-weight:500;font-size:15px;text-decoration:none;padding:12px 22px;border-radius:4px;min-height:44px;display:inline-flex;align-items:center">Free SEO audit</a>
+<button class="menubtn" type="button" aria-label="Open menu" style="width:44px;height:44px;border-radius:50%;border:2px solid #FFFFFF;background:transparent;color:#FFFFFF;align-items:center;justify-content:center;cursor:pointer"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="padding:28px 24px 56px;text-align:center">
+<div style="max-width:960px;margin:0 auto">
+
+<p style="margin:0 0 14px;font-size:14px;font-weight:500;color:#171A20">Get Ranked &amp; Recommended by</p>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch;max-width:560px;margin:0 auto 28px">
+<div style="min-width:0;height:64px;overflow:hidden;background:#FFFFFF;border-radius:8px;padding:14px 12px;display:flex;align-items:center;justify-content:center"><img src="/_blob/357047aa7430e53c2e3dea3e28682246" alt="Google AI Overview" style="width:100%;height:100%;object-fit:contain;display:block"></div>
+<div style="min-width:0;height:64px;overflow:hidden;background:#FFFFFF;border-radius:8px;padding:14px 12px;display:flex;align-items:center;justify-content:center"><img src="/_blob/4c4d6f9f1cd0f517173cc3d0ab0f9c90" alt="ChatGPT" style="width:100%;height:100%;object-fit:contain;display:block"></div>
+<div style="min-width:0;height:64px;overflow:hidden;background:#FFFFFF;border-radius:8px;padding:14px 12px;display:flex;align-items:center;justify-content:center"><img src="/_blob/0a8e13aa3cea09aa745f65bd10eaf8d3" alt="Perplexity" style="width:100%;height:100%;object-fit:contain;display:block"></div>
+<div style="min-width:0;height:64px;overflow:hidden;background:#FFFFFF;border-radius:8px;padding:14px 12px;display:flex;align-items:center;justify-content:center"><img src="/_blob/32cb88e417214a6a0ffd99de64acdc38" alt="Grok" style="width:100%;height:100%;object-fit:contain;display:block"></div>
+</div>
+
+<div style="display:inline-flex;align-items:center;gap:12px;background:#FFFFFF;border:1px solid #D0D1D2;border-radius:999px;padding:5px 20px 5px 16px;font-size:14px;line-height:1.3;font-weight:400;letter-spacing:0;margin-bottom:24px">
+<span style="color:var(--acc);display:flex"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 2l7 2.8v5.2c0 4.4-3 7.8-7 9.5-4-1.7-7-5.1-7-9.5V4.8z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M11 4.6l4.8 1.9v3.6c0 3.1-2 5.5-4.8 6.8-2.8-1.3-4.8-3.7-4.8-6.8V6.5z" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" opacity="0.7"/></svg></span>
+90-Day Money Back Guarantee
+</div>
+
+<h1 style="margin:0 0 16px;font-weight:700;font-size:clamp(26px,4.2vw,48px);line-height:1.2;letter-spacing:0;color:#171A20">Search Has Changed. <span style="color:var(--acc)">Get Found On Google And AI.</span></h1>
+
+<p style="margin:0 auto 24px;font-size:clamp(16px,1.5vw,18px);line-height:1.55;max-width:700px;color:#393C41">We specialize in AI search visibility. We get your business recommended by ChatGPT, Gemini and Perplexity, and keep you ranked on Google, so your phone rings more.</p>
+
+<div style="display:inline-flex;flex-direction:column;gap:10px;align-items:flex-start;text-align:left;margin-bottom:28px;font-size:14px;font-weight:500">
+<div style="display:flex;align-items:center;gap:14px"><span style="color:#4E9A78;display:flex;flex:none"><svg width="22" height="22" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.3 10.2l2.5 2.5 4.6-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Backed By A Team With 22 Years Experience</div>
+</div>
+
+<div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+<a href="#contact" style="background:var(--acc);color:#FFFFFF;font-weight:500;font-size:14px;text-decoration:none;padding:14px 28px;border-radius:4px;min-height:48px;display:inline-flex;align-items:center">Check My AI Visibility →</a>
+<div style="font-size:15px;font-weight:500">Call <a href="tel:+19035169088" style="text-decoration:none;color:inherit">(903) 516-9088</a></div>
+</div>
+</div>
+</section>
+
+<!-- PROBLEM -->
+<section id="about" style="padding:80px 24px;background:#F4F4F4">
+<div style="max-width:1100px;margin:0 auto">
+<div style="text-align:center;max-width:760px;margin:0 auto 32px">
+<h2 class="rv2" style="margin:0 0 16px;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">Your Customers Are Asking AI. <span style="color:var(--acc)">Are You The Answer?</span></h2>
+<p style="margin:0;font-size:16px;color:#393C41">Visibility is no longer just about ranking on Google. AI platforms like ChatGPT, Gemini and Perplexity now discover, evaluate and recommend businesses for your customers. If they don't know you, they won't recommend you.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#FFFFFF;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">AI Is Now Mainstream</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="132" height="48" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><path d="M60 30 C80 36 100 40 124 40" stroke="#E3E3E3" stroke-width="5" stroke-linecap="round"/><path id="rd1" d="M4 40 C34 40 46 40 60 30 C78 24 92 12 112 10" stroke="#E3E3E3" stroke-width="5" stroke-linecap="round"/><path d="M4 40 C34 40 46 40 60 30 C78 24 92 12 112 10" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 4"><animate attributeName="stroke-dashoffset" from="0" to="-14" dur="0.8s" repeatCount="indefinite"/></path><path d="M112 2 L114.2 7.8 L120 10 L114.2 12.2 L112 18 L109.8 12.2 L104 10 L109.8 7.8Z" fill="currentColor"><animate attributeName="opacity" values="0.45;1;0.45" dur="1.6s" repeatCount="indefinite"/></path><g><rect x="-5" y="-3" width="10" height="6" rx="2.5" fill="currentColor"/><rect x="1" y="-2" width="3" height="4" rx="1" fill="#FFFFFF" opacity="0.85"/><animateMotion dur="3.4s" repeatCount="indefinite" rotate="auto"><mpath href="#rd1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.9;1" dur="3.4s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">More than half of Americans now use AI chat as a main research tool. Your next customer may never open Google.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#FFFFFF;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Google Still Matters</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="132" height="48" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><rect x="30" y="11" width="72" height="5" rx="2.5" fill="#E3E3E3"/><rect x="30" y="22" width="52" height="5" rx="2.5" fill="#E3E3E3"/><rect x="30" y="33" width="62" height="5" rx="2.5" fill="#E3E3E3"/><g><circle cx="0" cy="0" r="9" stroke="currentColor" stroke-width="2" fill="#3E6AE1" fill-opacity="0.08"/><path d="M6.6 6.6L12.5 12.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><animateTransform attributeName="transform" type="translate" values="34 21;98 21;34 21" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1" dur="4s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">Google is still where most searches happen, so SEO stays the foundation. It is just no longer enough on its own.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#FFFFFF;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Your Competitor Gets The Call</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="132" height="48" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><path d="M60 24 C80 24 92 12 112 12" stroke="#E3E3E3" stroke-width="5" stroke-linecap="round"/><path id="rd3" d="M4 24 L60 24 C80 24 92 36 112 36" stroke="#E3E3E3" stroke-width="5" stroke-linecap="round"/><path d="M4 24 L60 24 C80 24 92 36 112 36" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 4"><animate attributeName="stroke-dashoffset" from="0" to="-14" dur="0.8s" repeatCount="indefinite"/></path><circle cx="118" cy="12" r="5" stroke="#B5B7BB" stroke-width="1.4" stroke-dasharray="2 2"/><circle cx="118" cy="36" r="5" fill="currentColor"/><circle cx="118" cy="36" r="5" stroke="currentColor" stroke-width="1.4"><animate attributeName="r" values="5;12" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0" dur="1.7s" repeatCount="indefinite"/></circle><g><rect x="-5" y="-3" width="10" height="6" rx="2.5" fill="currentColor"/><rect x="1" y="-2" width="3" height="4" rx="1" fill="#FFFFFF" opacity="0.85"/><animateMotion dur="3.4s" repeatCount="indefinite" rotate="auto"><mpath href="#rd3"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.9;1" dur="3.4s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">When AI recommends someone else, that customer never sees you. We call it recommendation theft.</p></div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section style="padding:80px 24px;background:#FFFFFF">
+<div style="max-width:1100px;margin:0 auto">
+<div style="text-align:center;max-width:760px;margin:0 auto 28px">
+<h2 class="rv2" style="margin:0 0 16px;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">Why AI Search <span style="color:var(--acc)">Matters Now</span></h2>
+<p style="margin:0;font-size:16px;color:#393C41">Ranking #1 isn't enough anymore. AI answers take the click. Be the answer.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 16px;text-align:center">
+<div class="num"><div style="font-weight:600;font-size:clamp(36px,5vw,56px);line-height:1.1;color:#171A20">58.5%</div><div style="font-size:14px;color:#5C5E62;margin-top:8px">of searches end with no click</div></div>
+<div class="num"><div style="font-weight:600;font-size:clamp(36px,5vw,56px);line-height:1.1;color:#171A20">47%</div><div style="font-size:14px;color:#5C5E62;margin-top:8px">fewer website visits when AI answers</div></div>
+<div class="num"><div style="font-weight:600;font-size:clamp(36px,5vw,56px);line-height:1.1;color:#171A20">900M</div><div style="font-size:14px;color:#5C5E62;margin-top:8px">weekly ChatGPT users</div></div>
+<div class="num"><div style="font-weight:600;font-size:clamp(36px,5vw,56px);line-height:1.1;color:#171A20">45%</div><div style="font-size:14px;color:#5C5E62;margin-top:8px">use AI to find businesses</div></div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="padding:80px 24px;background:#F4F4F4">
+<div style="max-width:1100px;margin:0 auto">
+<div style="text-align:center;max-width:760px;margin:0 auto 32px">
+<h2 class="rv2" style="margin:0 0 16px;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">AI Search Is Our Specialty. <span style="color:var(--acc)">Google Is Covered Too.</span></h2>
+<p style="margin:0;font-size:16px;color:#393C41">Customers now discover, compare and choose businesses through AI. We specialize in getting you recommended there, and we keep you ranked on Google.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<div class="rv stk" style="flex:1 1 300px;min-width:0;min-height:560px;background:#171A20;color:#FFFFFF;border-radius:12px;padding:36px 28px 28px;display:flex;flex-direction:column;align-items:center;text-align:center"><div style="font-size:13px;font-weight:500;color:#D0D1D2;margin-bottom:8px">GEO · OUR SPECIALTY</div><h3 style="margin:0 0 8px;font-weight:600;font-size:28px;line-height:1.2;color:#FFFFFF">Get Recommended By AI</h3><p style="margin:0;color:#D0D1D2;font-size:14px;line-height:1.5;max-width:300px">Generative Engine Optimization. We help ChatGPT, Gemini, Perplexity and Grok know your business and recommend it.</p><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:24px 0"><svg class="art" width="112" height="112" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M12 3l2.2 6L20.5 11l-6.3 2L12 19l-2.2-6L3.5 11l6.3-2z"/></svg></div><div style="width:100%;margin-bottom:24px"><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Clear, consistent business information everywhere</div><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Reviews and mentions AI tools trust</div><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Content AI can read and quote</div></div><div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;width:100%"><a href="#contact" style="background:var(--acc);color:#FFFFFF;font-weight:500;font-size:14px;text-decoration:none;padding:12px 24px;border-radius:4px;min-height:44px;display:inline-flex;align-items:center">Get a free audit</a><a href="#faq" style="background:#FFFFFF;color:#393C41;font-weight:500;font-size:14px;text-decoration:none;padding:12px 24px;border-radius:4px;min-height:44px;display:inline-flex;align-items:center">Learn more</a></div></div>
+<div class="rv stk" style="flex:1 1 300px;min-width:0;min-height:560px;background:#171A20;color:#FFFFFF;border-radius:12px;padding:36px 28px 28px;display:flex;flex-direction:column;align-items:center;text-align:center"><div style="font-size:13px;font-weight:500;color:#D0D1D2;margin-bottom:8px">AEO · OUR SPECIALTY</div><h3 style="margin:0 0 8px;font-weight:600;font-size:28px;line-height:1.2;color:#FFFFFF">Be The Answer</h3><p style="margin:0;color:#D0D1D2;font-size:14px;line-height:1.5;max-width:300px">Answer Engine Optimization. We shape your pages so search engines pick your business as the direct answer.</p><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:24px 0"><svg class="art" width="112" height="112" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M4 5h16v11H11l-4 4v-4H4z"/><path pathLength="1" d="M9.5 9.5c0-1.2 1-2 2.2-2 1.3 0 2.2.8 2.2 1.8 0 1.5-2 1.4-2 3"/></svg></div><div style="width:100%;margin-bottom:24px"><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Featured snippet targeting</div><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Google AI summaries</div><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Voice search results</div></div><div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;width:100%"><a href="#contact" style="background:var(--acc);color:#FFFFFF;font-weight:500;font-size:14px;text-decoration:none;padding:12px 24px;border-radius:4px;min-height:44px;display:inline-flex;align-items:center">Get a free audit</a><a href="#faq" style="background:#FFFFFF;color:#393C41;font-weight:500;font-size:14px;text-decoration:none;padding:12px 24px;border-radius:4px;min-height:44px;display:inline-flex;align-items:center">Learn more</a></div></div>
+<div class="rv stk" style="flex:1 1 300px;min-width:0;min-height:560px;background:#171A20;color:#FFFFFF;border-radius:12px;padding:36px 28px 28px;display:flex;flex-direction:column;align-items:center;text-align:center"><div style="font-size:13px;font-weight:500;color:#D0D1D2;margin-bottom:8px">SEO · THE FOUNDATION</div><h3 style="margin:0 0 8px;font-weight:600;font-size:28px;line-height:1.2;color:#FFFFFF">Get Ranked On Google</h3><p style="margin:0;color:#D0D1D2;font-size:14px;line-height:1.5;max-width:300px">The foundation. We make sure Google finds your business and puts it in front of people searching nearby.</p><div style="flex:1;display:flex;align-items:center;justify-content:center;padding:24px 0"><svg class="art" width="112" height="112" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><circle pathLength="1" cx="10.5" cy="10.5" r="6.5"/><path pathLength="1" d="M15.5 15.5L21 21"/></svg></div><div style="width:100%;margin-bottom:24px"><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Google Maps and Business Profile</div><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Fast, mobile-friendly website fixes</div><div style="padding:10px 0;border-top:1px solid #393C41;font-size:14px;color:#FFFFFF">Content and authority building</div></div><div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;width:100%"><a href="#contact" style="background:var(--acc);color:#FFFFFF;font-weight:500;font-size:14px;text-decoration:none;padding:12px 24px;border-radius:4px;min-height:44px;display:inline-flex;align-items:center">Get a free audit</a><a href="#faq" style="background:#FFFFFF;color:#393C41;font-weight:500;font-size:14px;text-decoration:none;padding:12px 24px;border-radius:4px;min-height:44px;display:inline-flex;align-items:center">Learn more</a></div></div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="padding:80px 24px;background:#FFFFFF">
+<div style="max-width:1100px;margin:0 auto">
+<div style="text-align:center;max-width:760px;margin:0 auto 32px">
+<h2 class="rv2" style="margin:0 0 16px;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">How We Get You <span style="color:var(--acc)">Recommended</span></h2>
+<p style="margin:0;font-size:16px;color:#393C41">Five simple steps. We do the work. You answer the phone.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#F4F4F4;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><div style="font-size:13px;font-weight:500;color:#5C5E62;margin-bottom:8px">01</div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Check</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="121" height="44" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><path d="M8 8h40a4 4 0 014 4v16a4 4 0 01-4 4H24l-8 7v-7H8a4 4 0 01-4-4V12a4 4 0 014-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="18" cy="20" r="2.4" fill="currentColor"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="0s" repeatCount="indefinite"/></circle><circle cx="27" cy="20" r="2.4" fill="currentColor"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle><circle cx="36" cy="20" r="2.4" fill="currentColor"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle><rect x="72" y="12" width="52" height="5" rx="2.5" fill="#D9D9D9"/><rect x="72" y="22" width="38" height="5" rx="2.5" fill="#D9D9D9"/><rect x="72" y="32" width="46" height="5" rx="2.5" fill="#D9D9D9"/><g><circle cx="0" cy="0" r="7.5" stroke="currentColor" stroke-width="1.8" fill="#3E6AE1" fill-opacity="0.1"/><path d="M5.4 5.4L10 10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><animateTransform attributeName="transform" type="translate" values="78 18;112 18;78 18" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1" dur="3.6s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">We test what ChatGPT, Gemini and Perplexity say about you today.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#F4F4F4;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><div style="font-size:13px;font-weight:500;color:#5C5E62;margin-bottom:8px">02</div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Build</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="121" height="44" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><g><rect x="36" y="35" width="60" height="9" rx="3" fill="currentColor" fill-opacity="0.3"/><animateTransform attributeName="transform" type="translate" values="0 -34;0 -34;0 0;0 0;0 0" keyTimes="0;0.0;0.14;0.88;1" calcMode="linear" dur="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0;0.1;0.88;1" dur="3.2s" repeatCount="indefinite"/></g><g><rect x="36" y="24" width="60" height="9" rx="3" fill="currentColor" fill-opacity="0.6"/><animateTransform attributeName="transform" type="translate" values="0 -34;0 -34;0 0;0 0;0 0" keyTimes="0;0.18;0.32;0.88;1" calcMode="linear" dur="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.18;0.28;0.88;1" dur="3.2s" repeatCount="indefinite"/></g><g><rect x="36" y="13" width="60" height="9" rx="3" fill="currentColor" fill-opacity="1"/><animateTransform attributeName="transform" type="translate" values="0 -34;0 -34;0 0;0 0;0 0" keyTimes="0;0.36;0.5;0.88;1" calcMode="linear" dur="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.36;0.45999999999999996;0.88;1" dur="3.2s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">We make your business details clear and consistent so AI understands you.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#F4F4F4;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><div style="font-size:13px;font-weight:500;color:#5C5E62;margin-bottom:8px">03</div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Publish</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="121" height="44" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><rect x="44" y="4" width="44" height="40" rx="5" stroke="currentColor" stroke-width="1.6"/><rect x="52" y="13" width="0" height="4" rx="2" fill="currentColor" fill-opacity="0.85"><animate attributeName="width" values="0;0;28;28;0" keyTimes="0;0.05;0.25;0.88;1" dur="3.4s" repeatCount="indefinite"/></rect><rect x="52" y="22" width="0" height="4" rx="2" fill="currentColor" fill-opacity="0.85"><animate attributeName="width" values="0;0;22;22;0" keyTimes="0;0.25;0.45;0.88;1" dur="3.4s" repeatCount="indefinite"/></rect><rect x="52" y="31" width="0" height="4" rx="2" fill="currentColor" fill-opacity="0.85"><animate attributeName="width" values="0;0;26;26;0" keyTimes="0;0.45;0.65;0.88;1" dur="3.4s" repeatCount="indefinite"/></rect><g><circle cx="104" cy="14" r="8" fill="currentColor"/><path d="M100.2 14.2l2.6 2.6 5-5.4" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><animateTransform attributeName="transform" type="scale" additive="sum" values="1;1;1" dur="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6;0.7;0.88;1" dur="3.4s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">We create content that answers the questions customers ask AI.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#F4F4F4;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><div style="font-size:13px;font-weight:500;color:#5C5E62;margin-bottom:8px">04</div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Track</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="121" height="44" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><path d="M6 42H126" stroke="#D9D9D9" stroke-width="1.4"/><path d="M6 14H126M6 28H126" stroke="#D9D9D9" stroke-width="1" stroke-dasharray="2 4"/><path id="rd4" d="M10 38 L32 30 L50 34 L72 20 L92 23 L122 8" pathLength="1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.6;0.9;1" dur="3.4s" repeatCount="indefinite"/></path><circle r="3.6" fill="currentColor"><animateMotion dur="3.4s" repeatCount="indefinite" keyPoints="0;1;1;0" keyTimes="0;0.6;0.9;1" calcMode="linear"><mpath href="#rd4"/></animateMotion></circle></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">We watch where AI mentions and recommends you, and where it picks competitors.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#F4F4F4;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><div style="font-size:13px;font-weight:500;color:#5C5E62;margin-bottom:8px">05</div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Report</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="121" height="44" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><path d="M8 42H124" stroke="#D9D9D9" stroke-width="1.4"/><rect x="22" y="42" width="11" height="0" rx="2" fill="currentColor" fill-opacity="0.30"><animate attributeName="height" values="0;0;10;10;0" keyTimes="0;0.05;0.25;0.9;1" dur="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="42;42;32;32;42" keyTimes="0;0.05;0.25;0.9;1" dur="3.2s" repeatCount="indefinite"/></rect><rect x="40" y="42" width="11" height="0" rx="2" fill="currentColor" fill-opacity="0.47"><animate attributeName="height" values="0;0;16;16;0" keyTimes="0;0.15;0.35;0.9;1" dur="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="42;42;26;26;42" keyTimes="0;0.15;0.35;0.9;1" dur="3.2s" repeatCount="indefinite"/></rect><rect x="58" y="42" width="11" height="0" rx="2" fill="currentColor" fill-opacity="0.65"><animate attributeName="height" values="0;0;22;22;0" keyTimes="0;0.25;0.45;0.9;1" dur="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="42;42;20;20;42" keyTimes="0;0.25;0.45;0.9;1" dur="3.2s" repeatCount="indefinite"/></rect><rect x="76" y="42" width="11" height="0" rx="2" fill="currentColor" fill-opacity="0.82"><animate attributeName="height" values="0;0;30;30;0" keyTimes="0;0.35;0.55;0.9;1" dur="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="42;42;12;12;42" keyTimes="0;0.35;0.55;0.9;1" dur="3.2s" repeatCount="indefinite"/></rect><rect x="94" y="42" width="11" height="0" rx="2" fill="currentColor" fill-opacity="1.00"><animate attributeName="height" values="0;0;38;38;0" keyTimes="0;0.45;0.65;0.9;1" dur="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="42;42;4;4;42" keyTimes="0;0.45;0.65;0.9;1" dur="3.2s" repeatCount="indefinite"/></rect><path d="M110 30l8-9 8 9M118 21v18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.65;0.78;0.9;1" dur="3.2s" repeatCount="indefinite"/></path></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">You get a simple report showing what changed and what comes next.</p></div>
+</div>
+</div>
+</section>
+
+<!-- GUARANTEE -->
+<section style="padding:80px 24px;background:#F4F4F4">
+<div style="max-width:1000px;margin:0 auto">
+<div class="rv" style="background:#171A20;color:#FFFFFF;border-radius:12px;padding:56px 28px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<svg width="52" height="52" viewBox="0 0 22 22" aria-hidden="true" fill="none" style="color:#FFFFFF;margin-bottom:20px"><path d="M11 2l7 2.8v5.2c0 4.4-3 7.8-7 9.5-4-1.7-7-5.1-7-9.5V4.8z" stroke="currentColor" stroke-width="0.9" stroke-linejoin="round"/><path d="M7.6 11l2.4 2.4 4.4-4.8" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="font-size:14px;font-weight:500;color:#D0D1D2;margin-bottom:8px">Our Risk-Free Guarantee</div>
+<h2 style="margin:0 0 16px;font-weight:700;font-size:clamp(30px,4.6vw,48px);line-height:1.15;color:#FFFFFF">90-Day Money Back Guarantee</h2>
+<p style="margin:0 auto 24px;max-width:640px;font-size:16px;line-height:1.55;color:#D0D1D2">If we don't build your website's authority, improve your Google rankings, grow your search traffic, and optimize your business for AI tools like ChatGPT within 90 days, we will refund your money. No long-term contracts.</p>
+<div style="max-width:640px;border-top:1px solid #393C41;padding-top:20px;margin-bottom:28px;font-size:14px;line-height:1.5;color:#D0D1D2">What we ask of you: site and Google access, and approvals within 3 business days.</div>
+<a href="#contact" style="background:var(--acc);color:#FFFFFF;font-weight:500;font-size:14px;text-decoration:none;padding:14px 28px;border-radius:4px;min-height:48px;display:inline-flex;align-items:center">Check My AI Visibility →</a>
+</div>
+</div>
+</section>
+
+<!-- FREE AUDIT BAND -->
+<section style="background:#171A20;color:#FFFFFF;padding:80px 24px;text-align:center">
+<div style="max-width:760px;margin:0 auto">
+<h2 class="rv2" style="margin:0 0 12px;font-weight:700;font-size:clamp(22px,3vw,30px);line-height:1.25">Does AI Recommend Your Business?</h2>
+<p style="margin:0 0 24px;font-size:16px;color:#D0D1D2">Find out what ChatGPT, Gemini and Perplexity say when customers ask for a business like yours, and which competitors they recommend instead.</p>
+<a href="#contact" style="background:var(--acc);color:#FFFFFF;font-weight:500;font-size:14px;text-decoration:none;padding:14px 28px;border-radius:4px;min-height:48px;display:inline-flex;align-items:center">Check My AI Visibility →</a>
+<p style="margin:16px 0 0;font-size:14px;color:#D0D1D2">Free. No credit card required.</p>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="padding:80px 24px;background:#F4F4F4">
+<div style="max-width:1100px;margin:0 auto">
+<div style="text-align:center;max-width:760px;margin:0 auto 32px">
+<h2 class="rv2" style="margin:0;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">Real Results From <span style="color:var(--acc)">Real Clients</span></h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:20px">
+<div class="rv" style="flex:1 1 300px;min-width:0;background:#FFFFFF;border-radius:12px;padding:32px;display:flex;flex-direction:column">
+<div style="font-weight:500;font-size:28px;line-height:1.1;color:var(--acc);margin-bottom:8px"><span class="ph">[+XXX%]</span></div>
+<div style="font-weight:500;margin-bottom:16px">increase in qualified leads</div>
+<p style="margin:0 0 24px;color:#393C41;flex:1"><span class="ph">[A short, real quote in the client's own words]</span></p>
+<div style="border-top:1px solid #EEEEEE;padding-top:16px"><div style="font-weight:500"><span class="ph">[Client name]</span></div><div style="font-size:14px;color:#5C5E62"><span class="ph">[Business, City]</span></div></div>
+</div>
+<div class="rv" style="flex:1 1 300px;min-width:0;background:#FFFFFF;border-radius:12px;padding:32px;display:flex;flex-direction:column">
+<div style="font-weight:500;font-size:28px;line-height:1.1;color:var(--acc);margin-bottom:8px"><span class="ph">[+XXX%]</span></div>
+<div style="font-weight:500;margin-bottom:16px">increase in online sales</div>
+<p style="margin:0 0 24px;color:#393C41;flex:1"><span class="ph">[A short, real quote in the client's own words]</span></p>
+<div style="border-top:1px solid #EEEEEE;padding-top:16px"><div style="font-weight:500"><span class="ph">[Client name]</span></div><div style="font-size:14px;color:#5C5E62"><span class="ph">[Business, City]</span></div></div>
+</div>
+<div class="rv" style="flex:1 1 300px;min-width:0;background:#FFFFFF;border-radius:12px;padding:32px;display:flex;flex-direction:column">
+<div style="font-weight:500;font-size:28px;line-height:1.1;color:var(--acc);margin-bottom:8px"><span class="ph">[+XXX%]</span></div>
+<div style="font-weight:500;margin-bottom:16px">increase in high-value clients</div>
+<p style="margin:0 0 24px;color:#393C41;flex:1"><span class="ph">[A short, real quote in the client's own words]</span></p>
+<div style="border-top:1px solid #EEEEEE;padding-top:16px"><div style="font-weight:500"><span class="ph">[Client name]</span></div><div style="font-size:14px;color:#5C5E62"><span class="ph">[Business, City]</span></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- NO CONTRACTS -->
+<section style="padding:80px 24px;background:#FFFFFF">
+<div style="max-width:760px;margin:0 auto;text-align:center">
+<h2 class="rv2" style="margin:0 0 16px;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">No Long-Term <span style="color:var(--acc)">Contracts. Ever.</span></h2>
+<p style="margin:0;font-size:16px;color:#393C41">We work month-to-month. Cancel with 30 days' notice and keep everything we built.</p>
+</div>
+</section>
+
+<!-- WHY US -->
+<section id="why" style="padding:80px 24px;background:#F4F4F4">
+<div style="max-width:1100px;margin:0 auto">
+<div style="text-align:center;max-width:760px;margin:0 auto 32px">
+<h2 class="rv2" style="margin:0;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">Why Local Businesses <span style="color:var(--acc)">Choose OmniRankedAI</span></h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#FFFFFF;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">A Team With 22 Years Of Experience</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="132" height="48" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><path d="M8 26H100" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round"/><path d="M8 26H100" pathLength="1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.6;0.9;1" dur="4s" repeatCount="indefinite"/></path><circle cx="18" cy="26" r="3.2" fill="currentColor" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.12;0.18;0.9;1" dur="4s" repeatCount="indefinite"/></circle><circle cx="40" cy="26" r="3.2" fill="currentColor" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.25;0.31;0.9;1" dur="4s" repeatCount="indefinite"/></circle><circle cx="62" cy="26" r="3.2" fill="currentColor" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.38;0.44;0.9;1" dur="4s" repeatCount="indefinite"/></circle><circle cx="84" cy="26" r="3.2" fill="currentColor" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.51;0.5700000000000001;0.9;1" dur="4s" repeatCount="indefinite"/></circle><g><circle cx="112" cy="26" r="15" fill="currentColor"/><text x="112" y="31" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">22</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.65;0.9;1" dur="4s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">The specialists behind your campaign have worked through every major Google update and know what lasts.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#FFFFFF;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">Built For Local</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="132" height="48" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><rect x="14" y="30" width="28" height="12" rx="2" fill="#D9D9D9"/><rect x="92" y="26" width="26" height="16" rx="2" fill="#D9D9D9"/><rect x="48" y="36" width="38" height="6" rx="2" fill="#D9D9D9"/><ellipse cx="66" cy="40" rx="4" ry="1.6" fill="currentColor" opacity="0.35"/><circle cx="66" cy="40" r="4" stroke="currentColor" stroke-width="1.4"><animate attributeName="r" values="4;22" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2s" repeatCount="indefinite"/></circle><g><path d="M66 40c-7-8-9-12-9-16a9 9 0 0118 0c0 4-2 8-9 16z" fill="currentColor"/><circle cx="66" cy="24" r="3.4" fill="#FFFFFF"/><animateTransform attributeName="transform" type="translate" values="0 -30;0 0;0 -7;0 0;0 0" keyTimes="0;0.25;0.4;0.52;1" dur="2s" repeatCount="indefinite"/></g></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">Plumbers, roofers, lawyers, dentists. We know how your customers search.</p></div>
+<div class="rv" style="flex:1 1 240px;min-width:0;min-height:260px;background:#FFFFFF;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:12px"><div><h3 style="margin:0;font-weight:600;font-size:22px;line-height:1.25;color:#171A20">AI Search Specialists</h3></div><div style="flex:1;display:flex;align-items:center;justify-content:center"><svg width="132" height="48" viewBox="0 0 132 48" aria-hidden="true" fill="none" style="color:var(--acc)"><rect x="6" y="12" width="76" height="24" rx="12" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="24" r="3.6" stroke="currentColor" stroke-width="1.4"/><path d="M22 27l3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><rect x="32" y="22" width="0" height="4" rx="2" fill="currentColor" fill-opacity="0.85"><animate attributeName="width" values="0;0;16;16;0" keyTimes="0;0.08;0.22999999999999998;0.9;1" dur="3.6s" repeatCount="indefinite"/></rect><rect x="52" y="22" width="0" height="4" rx="2" fill="currentColor" fill-opacity="0.85"><animate attributeName="width" values="0;0;10;10;0" keyTimes="0;0.28;0.43000000000000005;0.9;1" dur="3.6s" repeatCount="indefinite"/></rect><rect x="66" y="22" width="0" height="4" rx="2" fill="currentColor" fill-opacity="0.85"><animate attributeName="width" values="0;0;8;8;0" keyTimes="0;0.42;0.57;0.9;1" dur="3.6s" repeatCount="indefinite"/></rect><path d="M104 11 L107.64 20.36 L117 24 L107.64 27.64 L104 37 L100.36 27.64 L91 24 L100.36 20.36Z" fill="currentColor"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" begin="0s" repeatCount="indefinite"/></path><path d="M122 5 L123.4 8.6 L127 10 L123.4 11.4 L122 15 L120.6 11.4 L117 10 L120.6 8.6Z" fill="currentColor"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" begin="0.5s" repeatCount="indefinite"/></path><path d="M120 36 L121.12 38.88 L124 40 L121.12 41.12 L120 44 L118.88 41.12 L116 40 L118.88 38.88Z" fill="currentColor"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" begin="1s" repeatCount="indefinite"/></path></svg></div><p style="margin:0;color:#393C41;font-size:14px;line-height:1.5">AEO and GEO are our focus, with SEO to keep you ranked on Google.</p></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding:80px 24px;background:#F4F4F4">
+<div style="max-width:820px;margin:0 auto">
+<div style="text-align:center;margin-bottom:48px">
+<h2 class="rv2" style="margin:0 0 12px;font-weight:700;font-size:clamp(24px,3.2vw,36px);line-height:1.25;letter-spacing:0">Frequently Asked <span style="color:var(--acc)">Questions</span></h2>
+<p style="margin:0;font-size:16px;color:#393C41">Straight answers, no jargon.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<details class="rv faq" style="background:#FFFFFF;border-radius:12px"><summary><h3 style="margin:0;font-weight:600;font-size:16px">How fast will I see results?</h3><span class="fq" aria-hidden="true"></span></summary><p style="margin:0;padding:0 28px 24px;color:#393C41;font-size:15px">Fixes to your Google profile, tracking and key pages go live in 14 days. Rankings and traffic build from there, which is why the guarantee covers 90 days.</p></details>
+<details class="rv faq" style="background:#FFFFFF;border-radius:12px"><summary><h3 style="margin:0;font-weight:600;font-size:16px">Do I have to sign a contract?</h3><span class="fq" aria-hidden="true"></span></summary><p style="margin:0;padding:0 28px 24px;color:#393C41;font-size:15px">No. Everything is month-to-month. Cancel with 30 days' notice and keep everything we built.</p></details>
+<details class="rv faq" style="background:#FFFFFF;border-radius:12px"><summary><h3 style="margin:0;font-weight:600;font-size:16px">What are SEO, AEO and GEO?</h3><span class="fq" aria-hidden="true"></span></summary><p style="margin:0;padding:0 28px 24px;color:#393C41;font-size:15px">SEO gets you ranked on Google. AEO makes you the direct answer in snippets, AI summaries and voice results. GEO gets you recommended by AI tools like ChatGPT, Gemini and Perplexity. We do all three.</p></details>
+<details class="rv faq" style="background:#FFFFFF;border-radius:12px"><summary><h3 style="margin:0;font-weight:600;font-size:16px">Is SEO dead?</h3><span class="fq" aria-hidden="true"></span></summary><p style="margin:0;padding:0 28px 24px;color:#393C41;font-size:15px">No. Google is still where most searches happen. But people now ask AI too, so SEO alone is no longer enough. You need both.</p></details>
+<details class="rv faq" style="background:#FFFFFF;border-radius:12px"><summary><h3 style="margin:0;font-weight:600;font-size:16px">What does the guarantee cover?</h3><span class="fq" aria-hidden="true"></span></summary><p style="margin:0;padding:0 28px 24px;color:#393C41;font-size:15px">Within 90 days, we commit to building your website's authority, improving your Google rankings, growing your search traffic, and preparing your business for AI tools like ChatGPT. If we fall short, you get a refund.</p></details>
+<details class="rv faq" style="background:#FFFFFF;border-radius:12px"><summary><h3 style="margin:0;font-weight:600;font-size:16px">I already have an SEO company. Now what?</h3><span class="fq" aria-hidden="true"></span></summary><p style="margin:0;padding:0 28px 24px;color:#393C41;font-size:15px">Send us their latest report. We'll tell you for free what's working, what isn't and what to ask them.</p></details>
+<details class="rv faq" style="background:#FFFFFF;border-radius:12px"><summary><h3 style="margin:0;font-weight:600;font-size:16px">What do you need from me?</h3><span class="fq" aria-hidden="true"></span></summary><p style="margin:0;padding:0 28px 24px;color:#393C41;font-size:15px">A 30-minute kickoff call, access to your website and Google profile, and about 30 minutes a month to approve work.</p></details>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA + FORM -->
+<section id="contact" style="padding:80px 24px;background:#171A20;color:#FFFFFF">
+<div style="max-width:960px;margin:0 auto;text-align:center">
+<h2 class="rv2" style="margin:0 0 16px;font-weight:700;font-size:clamp(24px,3.6vw,38px);line-height:1.2;letter-spacing:0">Ready To Be Found On Google And AI? Start Your Risk-Free Campaign</h2>
+<p style="margin:0 0 28px;font-size:16px;color:#D0D1D2">Get a free AI visibility check with the 3 fixes most likely to get you recommended. Yours to keep.</p>
+<div style="background:#FFFFFF;color:#171A20;border-radius:8px;padding:36px;max-width:520px;margin:0 auto;text-align:left">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:6px"><label for="site" style="font-weight:500;font-size:14px">Your website</label><input id="site" type="text" placeholder="yourcompany.com" style="height:52px;border:1px solid #D0D1D2;border-radius:4px;padding:0 16px;font-size:16px;font-family:inherit;width:100%;background:#FFFFFF;color:#171A20"></div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="mail" style="font-weight:500;font-size:14px">Where should we send it?</label><input id="mail" type="email" placeholder="you@yourcompany.com" style="height:52px;border:1px solid #D0D1D2;border-radius:4px;padding:0 16px;font-size:16px;font-family:inherit;width:100%;background:#FFFFFF;color:#171A20"></div>
+<button type="button" style="min-height:56px;background:var(--acc);color:#FFFFFF;font-family:inherit;font-weight:500;font-size:16px;border:none;border-radius:4px;cursor:pointer">Check My AI Visibility →</button>
+<p style="margin:0;font-size:14px;color:#5C5E62;text-align:center">Free. No credit card required. Results in 2 business days. We never share your email.</p>
+</div>
+</div>
+<p style="margin:32px 0 0;font-size:15px;color:#D0D1D2">We take on <span class="phd">[5]</span> new clients a month so each one gets senior attention. <span class="phd">[3]</span> spots left this month.</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#000000;color:#C8C8C8;padding:40px 24px">
+<div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;font-size:15px">
+<div style="font-family:'Montserrat',system-ui,sans-serif;font-weight:700;font-size:18px;letter-spacing:-0.01em;color:#FFFFFF">OmniRanked<span style="color:#4169E1">AI</span></div>
+<div><span class="phd">[Phone]</span> · <span class="phd">[Email]</span> · <span class="phd">[City, State]</span></div>
+<div>© 2026 OmniRankedAI. All rights reserved.</div>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
