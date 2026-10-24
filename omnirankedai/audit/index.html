@@ -183,6 +183,17 @@ h2.t{font-size:clamp(26px,4vw,36px);line-height:1.2;text-align:center;margin-bot
 .pk li.b{font-weight:600}
 .pb{display:flex;align-items:center;justify-content:center;min-height:52px;border:1px solid var(--ink);border-radius:4px;font-weight:500;font-size:16px;color:var(--ink);text-decoration:none;background:#fff}
 .pk.f .pb{background:var(--acc);border-color:var(--acc);color:#fff}
+.gis{display:flex;flex-wrap:wrap;gap:16px}
+.gi{flex:1 1 300px;min-width:0;background:#fff;border-radius:12px;padding:24px;display:flex;gap:16px;align-items:flex-start}
+.gi svg{flex:none;margin-top:2px}
+.gi h3{font-size:18px;font-weight:600;margin-bottom:4px}
+.gi p{font-size:15px;color:var(--body)}
+.stick{display:none}
+@media(max-width:759px){
+.stick{display:flex;align-items:center;justify-content:center;position:fixed;left:0;right:0;bottom:0;z-index:50;min-height:64px;background:var(--acc);color:#fff;font-weight:600;font-size:17px;text-decoration:none;transform:translateY(100%);transition:transform .25s}
+.stick.on{transform:none}
+footer{padding-bottom:88px}
+}
 footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-size:14px}
 </style>
 </head>
@@ -197,8 +208,10 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 <form class="form" id="f" novalidate>
 <label for="site">Your website</label>
 <input id="site" type="text" placeholder="yourcompany.com" autocomplete="url">
-<label for="mail">Where can we reach you?</label>
+<label for="mail">Your email</label>
 <input id="mail" type="email" placeholder="you@yourcompany.com" autocomplete="email">
+<label for="tel">Best phone number</label>
+<input id="tel" type="tel" placeholder="(555) 555-5555" autocomplete="tel">
 <button class="btn" type="submit">Book My Free Call →</button>
 <div class="thanks" id="ok">Thanks. We will reach out to schedule your call.</div>
 </form>
@@ -215,6 +228,7 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 
 <section>
 <div class="wrap">
+<div class="eyebrow" style="text-align:center;margin-bottom:16px">What we will walk you through on your call</div>
 <div class="demoframe">
 <div class="demo" id="demo" aria-label="Animated sample of an AI visibility check">
 <div class="dtag">SAMPLE DATA</div>
@@ -284,6 +298,19 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 </div>
 </section>
 
+<section id="walk">
+<div class="wrap">
+<h2 class="t">What You Walk Away With</h2>
+<p class="lede">Your free call is a working session, not a sales pitch.</p>
+<div class="gis">
+<div class="gi"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="#E6ECFB"/><path d="M6.5 11.3l3 3 6-6.4" fill="none" stroke="#3E6AE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Your AI visibility results</h3><p>How ChatGPT, Gemini and Perplexity find and describe your business today.</p></div></div>
+<div class="gi"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="#E6ECFB"/><path d="M6.5 11.3l3 3 6-6.4" fill="none" stroke="#3E6AE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Where you are being missed</h3><p>The searches where competitors get recommended and you do not.</p></div></div>
+<div class="gi"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="#E6ECFB"/><path d="M6.5 11.3l3 3 6-6.4" fill="none" stroke="#3E6AE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Your top fixes, in order</h3><p>The changes that matter most, ranked by impact.</p></div></div>
+<div class="gi"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="#E6ECFB"/><path d="M6.5 11.3l3 3 6-6.4" fill="none" stroke="#3E6AE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>A clear recommendation</h3><p>The package that fits your business, with no pressure to sign up.</p></div></div>
+</div>
+</div>
+</section>
+
 <section id="packages">
 <div class="wrap">
 <h2 class="t">Pick The Package That Fits</h2>
@@ -349,13 +376,14 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 </div>
 </section>
 
+<a class="stick" id="stick" href="#f">Book My Free Call →</a>
 <footer>© 2026 OmniRankedAI. All rights reserved.</footer>
 
 <script>
 document.getElementById('f').addEventListener('submit',function(e){
 e.preventDefault();
-var s=document.getElementById('site').value.trim(),m=document.getElementById('mail').value.trim();
-if(!s||m.indexOf('@')<1){return}
+var s=document.getElementById('site').value.trim(),m=document.getElementById('mail').value.trim(),t=document.getElementById('tel').value.trim();
+if(!s||m.indexOf('@')<1||t.length<7){return}
 document.getElementById('ok').style.display='block';
 });
 (function(){
@@ -389,6 +417,9 @@ at(13200,run);
 if(reduce){show(1);arc.style.strokeDashoffset=251.3*(1-.86);arc.style.stroke='#12B5A0';$('mk').style.transform='rotate(155deg)';$('gnum').textContent='86';$('glab').textContent='Great';$('gbox').textContent='Frequently mentioned and often preferred by AI';$('k1').textContent='118';$('k2').textContent='171';$('k3').textContent='96';$('b1').style.width='62%';$('b2').style.width='84%';$('n1').textContent='44';$('n2').textContent='76';document.querySelectorAll('.wv path').forEach(function(p){p.style.strokeDashoffset=0});document.querySelectorAll('.seg i').forEach(function(i){i.style.width=i.style.getPropertyValue('--w')})}
 else{var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){run()}else{T.forEach(clearTimeout)}},{threshold:.25});io.observe($('demo'))}
 })();
+
+(function(){var f=document.getElementById('f'),b=document.getElementById('stick');if(!f||!b||!window.IntersectionObserver)return;
+new IntersectionObserver(function(e){b.classList.toggle('on',!e[0].isIntersecting&&e[0].boundingClientRect.top<0)},{threshold:0}).observe(f)})();
 </script>
 </body>
 </html>
