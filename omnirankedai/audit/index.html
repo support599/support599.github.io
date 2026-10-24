@@ -149,6 +149,10 @@ h2.t{font-size:clamp(26px,4vw,36px);line-height:1.2;text-align:center;margin-bot
 .cg .p{color:#7D9CF0;width:44px;margin-left:6px}
 .cg s{width:9px;height:9px;border-radius:50%;display:block}
 .cg b{font-weight:600}
+.tb .tr{max-height:60px;transition:max-height .5s,opacity .35s,padding .5s,background .3s}
+.tb .tr.rm{max-height:0;opacity:0;padding-top:0 !important;padding-bottom:0 !important;border-bottom-width:0;overflow:hidden}
+.tr.hl .mb{transition:transform .15s}
+.tr.hl .mb.p{transform:scale(.92)}
 .ttl{font-size:22px;font-weight:600;margin-bottom:14px}
 .gl{margin-top:2px}
 .wv path.ar{fill:#4C7BF0 !important;opacity:.12;stroke:none !important;stroke-dasharray:none !important;stroke-dashoffset:0 !important;animation:none !important}
@@ -345,7 +349,7 @@ at(3200,function(){gauge(86,'#12B5A0','Great','Frequently mentioned and often pr
 }
 function run(){
 T.forEach(clearTimeout);T=[];
-$('typed').textContent='';$('rs').classList.remove('on');$('tr1').classList.remove('hl');$('dbtn').classList.remove('p');
+$('typed').textContent='';$('rs').classList.remove('on');$('tr1').classList.remove('hl');document.querySelectorAll('.tb .tr').forEach(function(r){r.classList.remove('rm')});document.querySelector('#tr1 .mb').classList.remove('p');$('dbtn').classList.remove('p');
 show(0);
 var txt='yourcompany.com';
 for(var i=1;i<=txt.length;i++)(function(i){at(500+i*85,function(){$('typed').textContent=txt.slice(0,i)})})(i);
@@ -353,7 +357,7 @@ at(2200,function(){$('dbtn').classList.add('p')});
 at(2450,function(){$('dbtn').classList.remove('p')});
 at(2700,function(){show(1);overview()});
 at(7600,function(){show(2);$('tr1').classList.add('hl')});
-at(9000,function(){$('rs').classList.add('on')});
+at(8800,function(){document.querySelector('#tr1 .mb').classList.add('p')});at(9050,function(){document.querySelector('#tr1 .mb').classList.remove('p');var r=document.querySelectorAll('.tb .tr');r[1].classList.add('rm');r[2].classList.add('rm');$('rs').classList.add('on')});
 at(13200,run);
 }
 if(reduce){show(1);arc.style.strokeDashoffset=251.3*(1-.86);arc.style.stroke='#12B5A0';$('mk').style.transform='rotate(155deg)';$('gnum').textContent='86';$('glab').textContent='Great';$('gbox').textContent='Frequently mentioned and often preferred by AI';$('k1').textContent='118';$('k2').textContent='171';$('k3').textContent='96';$('b1').style.width='62%';$('b2').style.width='84%';$('n1').textContent='44';$('n2').textContent='76';document.querySelectorAll('.wv path').forEach(function(p){p.style.strokeDashoffset=0});document.querySelectorAll('.seg i').forEach(function(i){i.style.width=i.style.getPropertyValue('--w')})}
