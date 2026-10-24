@@ -336,7 +336,7 @@ var sc=document.querySelectorAll('.demo .sc'),arc=$('arc'),T=[],reduce=window.ma
 function show(n){sc.forEach(function(e,i){e.classList.toggle('on',i===n)})}
 function at(ms,f){T.push(setTimeout(f,ms))}
 function count(el,to,ms){var t0=null,from=parseFloat(el.textContent)||0;function st(t){if(!t0)t0=t;var p=Math.min((t-t0)/ms,1);el.textContent=Math.round(from+(to-from)*p);if(p<1)requestAnimationFrame(st)}requestAnimationFrame(st)}
-function gauge(v,col,label,msg,bg,fg){$('mk').style.transform='rotate('+(180*v/100)+'deg)';arc.style.stroke=col;arc.style.strokeDashoffset=251.3*(1-v/100);count($('gnum'),v,1400);$('glab').textContent=label;var b=$('gbox');b.textContent=msg;b.style.background=bg;b.style.color=fg}
+function gauge(v,col,label,msg,bg,fg){$('mk').style.transform='rotate('+(180*v/100)+'deg)';arc.style.stroke=col;arc.style.strokeDashoffset=251.3*(1-v/100);count($('gnum'),v,1400);setTimeout(function(){$('glab').textContent=label;var b=$('gbox');b.textContent=msg;b.style.background=bg;b.style.color=fg},1100)}
 function overview(){
 arc.style.strokeDashoffset=251.3;$('mk').style.transform='rotate(0deg)';$('gnum').textContent='0';
 ['k1','k2','k3','n1','n2'].forEach(function(i){$(i).textContent='0'});$('b1').style.width='0';$('b2').style.width='0';
