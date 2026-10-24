@@ -66,6 +66,62 @@ section{padding:72px 0}
 .md{background:#FFF1D6;color:#8A5A00}
 .row .tx{flex:1}
 
+
+/* animated demo */
+.demo{position:relative;background:#fff;border:1px solid #E3E6EF;border-radius:22px;max-width:920px;margin:56px auto 0;height:430px;box-shadow:0 30px 80px rgba(62,106,225,.2);overflow:hidden;text-align:left}
+.dtag{position:absolute;top:14px;right:16px;z-index:3;background:var(--ink);color:#fff;font-size:11px;font-weight:600;letter-spacing:.1em;padding:4px 10px;border-radius:6px}
+.sc{position:absolute;inset:0;padding:34px;opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s;pointer-events:none}
+.sc.on{opacity:1;transform:none}
+.s1{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.dk{font-size:15px;color:var(--muted);margin-bottom:14px}
+.dt{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.12;letter-spacing:-.01em;max-width:620px;margin-bottom:30px}
+.dq{display:flex;gap:10px;width:100%;max-width:560px;flex-wrap:wrap;justify-content:center}
+.dinp{flex:1 1 220px;height:54px;border-radius:12px;background:#F4F5F8;display:flex;align-items:center;padding:0 18px;font-size:16px;color:var(--ink);text-align:left}
+.cur{display:inline-block;width:2px;height:20px;background:var(--acc);margin-left:2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.dbtn{height:54px;padding:0 24px;border-radius:12px;background:var(--acc);color:#fff;font-weight:600;display:flex;align-items:center;transition:transform .15s,background .15s}
+.dbtn.p{transform:scale(.94);background:#2f55bd}
+.ov{display:flex;flex-wrap:wrap;gap:28px}
+.gz{flex:1 1 280px;max-width:340px;position:relative}
+.gz>svg{width:100%;display:block}
+#arc{transition:stroke-dashoffset 1.4s cubic-bezier(.3,.7,.2,1),stroke .6s}
+.gn{position:absolute;left:0;right:0;top:48px;text-align:center}
+.gn b{font-size:44px;line-height:1}
+.gn span{font-size:16px;color:var(--muted)}
+.gl{text-align:center;font-size:26px;font-weight:700;margin-top:-4px}
+.gb{margin:12px 0;padding:10px 14px;border-radius:8px;background:#FFF3D6;font-size:13px;color:#6B4B00;transition:background .6s,color .6s}
+.gr{display:flex;align-items:center;gap:10px;font-size:13px;margin-top:8px}
+.gr img{width:22px;height:18px;object-fit:contain}
+.gr span{width:84px}
+.gr u{flex:1;height:7px;border-radius:4px;background:#E8EAF0;overflow:hidden;text-decoration:none}
+.gr u i{display:block;height:100%;width:0;background:#4C7BF0;border-radius:4px;transition:width 1.2s}
+.gr em{font-style:normal;width:26px;text-align:right;font-weight:600}
+.mt{flex:1 1 320px;min-width:0}
+.kp{display:flex;gap:28px;margin-bottom:10px}
+.kp small{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.kp s{width:8px;height:8px;border-radius:50%;display:block}
+.kp b{font-size:28px}
+.wv{width:100%;height:96px;display:block;overflow:visible}
+.wv path{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;vector-effect:non-scaling-stroke}
+.s2.on .wv path{animation:dr 2s ease forwards}
+.s2.on .wv path:nth-child(2){animation-delay:.2s}
+.s2.on .wv path:nth-child(3){animation-delay:.4s}
+@keyframes dr{to{stroke-dashoffset:0}}
+.mc{margin-top:14px}
+.mc small{font-size:12px;color:var(--muted);font-weight:600}
+.seg{display:flex;height:10px;border-radius:5px;overflow:hidden;margin-top:8px;gap:2px}
+.seg i{width:0;transition:width 1.2s}
+.s2.on .seg i{width:var(--w)}
+.tb .th,.tb .tr{display:grid;grid-template-columns:1fr 80px 80px;gap:8px;padding:11px 12px;font-size:14px;align-items:center}
+.tb .th{font-weight:600;border-bottom:1px solid #E3E6EF}
+.tb .tr{border-bottom:1px solid #F0F1F5;border-radius:8px;transition:background .3s}
+.tb .tr span:first-child{color:#5C7FD6;text-decoration:underline;text-decoration-style:dotted}
+.tb .tr.hl{background:#EAF0FD}
+.rs{display:grid;grid-template-columns:1fr 1.4fr 110px;gap:16px;margin-top:14px;padding:16px;border:2px solid #12B5A0;border-radius:10px;background:#F2FBF9;font-size:14px;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.rs.on{opacity:1;transform:none}
+.rs small{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
+@media(max-width:700px){.demo{height:600px}.sc{padding:26px 20px}.ov{gap:18px}.rs{grid-template-columns:1fr;gap:10px}.tb .th,.tb .tr{grid-template-columns:1fr 64px 64px;font-size:13px}.s2 .mt .wv{height:70px}}
+
 /* logo strip */
 .strip{text-align:center;padding:0 0 8px}
 .strip p{font-size:14px;color:var(--muted);margin-bottom:18px}
@@ -99,9 +155,9 @@ h2.t{font-size:clamp(28px,4.4vw,42px);line-height:1.15;text-align:center;margin-
 .ih p{flex:1 1 280px;color:#C8CAD0;font-size:17px;max-width:420px}
 .tiles{display:flex;flex-wrap:wrap;gap:16px}
 .tile{flex:1 1 220px;background:#F4F4F4;color:var(--ink);border-radius:16px;padding:14px 14px 28px}
-.art{height:130px;border-radius:10px;background:var(--tint);color:var(--acc);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
-.art svg{width:200px;height:110px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.tile h3{font-size:22px;font-weight:600;line-height:1.2;padding:0 14px;margin-bottom:10px}
+.art{height:210px;overflow:hidden;border-radius:10px;background:var(--tint);color:var(--acc);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+.art svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.tile h3{font-size:26px;font-weight:600;line-height:1.2;padding:0 14px;margin-bottom:10px}
 .tile p{padding:0 14px;font-size:15px;color:var(--body)}
 
 /* stats */
@@ -142,31 +198,41 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 </form>
 <p class="note">Free. No credit card. We never share your email.</p>
 
-<div class="dash">
-<div class="lab">SAMPLE REPORT</div>
-<div class="dh"><div><b>AI Visibility Report</b><span>Example business. Your results will differ.</span></div><span>Grade: C</span></div>
-<div class="top">
-<div class="gauge"><div><b>58</b><span>out of 100</span></div></div>
-<div class="bars">
-<div class="m"><div><span>Can AI find you?</span><span>74</span></div><i style="--w:74%"></i></div>
-<div class="m"><div><span>Does AI understand you?</span><span>46</span></div><i style="--w:46%;--c:#E5A100"></i></div>
-<div class="m"><div><span>Does AI trust you?</span><span>55</span></div><i style="--w:55%;--c:#E5A100"></i></div>
+<div class="demo" id="demo" aria-label="Animated sample of an AI visibility check">
+<div class="dtag">SAMPLE DATA</div>
+<div class="sc s1 on">
+<div class="dk">AI visibility check</div>
+<div class="dt">See who AI recommends in your market</div>
+<div class="dq"><div class="dinp"><span id="typed"></span><i class="cur"></i></div><div class="dbtn" id="dbtn">Check AI visibility</div></div>
+</div>
+<div class="sc s2">
+<div class="dk" style="text-align:left;font-size:20px;color:var(--ink);font-weight:600;margin-bottom:18px">Visibility overview</div>
+<div class="ov">
+<div class="gz">
+<svg viewBox="0 0 200 118" aria-hidden="true"><path d="M20 108A80 80 0 0 1 180 108" fill="none" stroke="#E8EAF0" stroke-width="16" stroke-linecap="round"/><path id="arc" d="M20 108A80 80 0 0 1 180 108" fill="none" stroke="#E5A100" stroke-width="16" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/></svg>
+<div class="gn"><b id="gnum">0</b><span>/100</span></div>
+<div class="gl" id="glab">Low</div>
+<div class="gb" id="gbox">Rarely mentioned in AI answers compared to competitors</div>
+<div class="gr"><img src="../img/4c4d6f9f1cd0f517173cc3d0ab0f9c90.png" alt=""><span>ChatGPT</span><u><i id="b1"></i></u><em id="n1">0</em></div>
+<div class="gr"><img src="../img/357047aa7430e53c2e3dea3e28682246.png" alt=""><span>AI Overview</span><u><i id="b2"></i></u><em id="n2">0</em></div>
+</div>
+<div class="mt">
+<div class="kp"><div><small><s style="background:#4C7BF0"></s>Mentions</small><b id="k1">0</b></div><div><small><s style="background:#12B5A0"></s>Citations</small><b id="k2">0</b></div><div><small><s style="background:#F2A100"></s>Pages cited</small><b id="k3">0</b></div></div>
+<svg class="wv" viewBox="0 0 400 110" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 60 C40 30 70 80 110 55 S180 30 220 58 S300 85 340 50 S380 40 400 52" stroke="#4C7BF0"/><path pathLength="1" d="M0 82 C50 70 80 95 130 80 S200 62 250 78 S330 98 400 74" stroke="#F2A100"/><path pathLength="1" d="M0 96 C60 100 100 88 150 96 S250 104 300 94 S370 90 400 98" stroke="#12B5A0"/></svg>
+<div class="mc"><small>Mentions by area</small><div class="seg"><i style="--w:46%;background:#F2A100"></i><i style="--w:22%;background:#F7CE6B"></i><i style="--w:12%;background:#9C7BE8"></i><i style="--w:20%;background:#D9C9F6"></i></div></div>
 </div>
 </div>
-<div class="cols">
-<div>
-<h4>Does AI recommend you?</h4>
-<div class="row"><img src="../img/357047aa7430e53c2e3dea3e28682246.png" alt=""><span class="nm">Google AI Overview</span><span class="pill yes">Mentioned</span></div>
-<div class="row"><img src="../img/4c4d6f9f1cd0f517173cc3d0ab0f9c90.png" alt=""><span class="nm">ChatGPT</span><span class="pill no">Not found</span></div>
-<div class="row"><img src="../img/0a8e13aa3cea09aa745f65bd10eaf8d3.png" alt=""><span class="nm">Perplexity</span><span class="pill yes">Mentioned</span></div>
-<div class="row"><img src="../img/32cb88e417214a6a0ffd99de64acdc38.png" alt=""><span class="nm">Grok</span><span class="pill no">Not found</span></div>
 </div>
-<div>
-<h4>Top fixes, highest impact first</h4>
-<div class="row"><span class="tx">Add short, direct answers to your service pages</span><span class="pill hi">High</span></div>
-<div class="row"><span class="tx">Make your business details match across listings</span><span class="pill hi">High</span></div>
-<div class="row"><span class="tx">Let AI crawlers read your key pages</span><span class="pill md">Medium</span></div>
+<div class="sc s3">
+<div class="dk" style="text-align:left;font-size:20px;color:var(--ink);font-weight:600;margin-bottom:16px">Topics &amp; sources</div>
+<div class="tb">
+<div class="th"><span>Topic</span><span>Visibility</span><span>Mentions</span></div>
+<div class="tr hl" id="tr1"><span>emergency plumber near me</span><span>72</span><span>39</span></div>
+<div class="tr"><span>best roofer in my city</span><span>69</span><span>45</span></div>
+<div class="tr"><span>affordable ac repair</span><span>54</span><span>14</span></div>
+<div class="tr"><span>family dentist open saturday</span><span>37</span><span>12</span></div>
 </div>
+<div class="rs" id="rs"><div><small>Prompt</small>Who is the best emergency plumber near me?</div><div><small>AI response</small>...some highly rated options include Competitor 1 and Your Business.</div><div><small>Your business</small><b>Mentioned</b></div></div>
 </div>
 </div>
 </div>
@@ -225,10 +291,10 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 <p>We work with local service businesses, the kind customers search for by trade and town.</p>
 </div>
 <div class="tiles">
-<div class="tile"><div class="art"><svg viewBox="0 0 200 110" aria-hidden="true"><path d="M52 58 L100 20 L148 58"/><path d="M64 50 V94 H136 V50"/><path d="M90 94 V70 H110 V94"/><circle cx="168" cy="30" r="9"/><path d="M168 15 V19 M168 41 V45 M153 30 H157 M179 30 H183"/></svg></div><h3>Home Services</h3><p>HVAC, plumbing, electricians, roofing, cleaning</p></div>
-<div class="tile"><div class="art"><svg viewBox="0 0 200 110" aria-hidden="true"><path d="M58 70 A42 42 0 0 1 142 70"/><path d="M46 70 H154 V82 H46 Z"/><path d="M100 28 V70"/><path d="M70 98 H130"/></svg></div><h3>Contractors</h3><p>General contractors, remodeling, landscaping, painting</p></div>
-<div class="tile"><div class="art"><svg viewBox="0 0 200 110" aria-hidden="true"><path d="M100 18 V92"/><path d="M72 94 H128"/><path d="M52 34 H148"/><path d="M52 34 L38 66 M52 34 L66 66"/><path d="M32 66 Q52 84 72 66 Z"/><path d="M148 34 L134 66 M148 34 L162 66"/><path d="M128 66 Q148 84 168 66 Z"/></svg></div><h3>Law Firms</h3><p>Personal injury, family law, estate planning, criminal defense</p></div>
-<div class="tile"><div class="art"><svg viewBox="0 0 200 110" aria-hidden="true"><circle cx="100" cy="34" r="22"/><path d="M100 24 V44 M90 34 H110"/><path d="M26 86 H72 L82 66 L98 104 L114 72 L122 86 H174"/></svg></div><h3>Health &amp; Wellness</h3><p>Dentists, med spas, chiropractors, clinics</p></div>
+<div class="tile"><div class="art"><svg viewBox="0 0 300 200" aria-hidden="true"><rect x="0" y="150" width="300" height="50" fill="#8FA9F2" stroke="none"/><circle cx="244" cy="60" r="26" fill="#FFFFFF" stroke="none"/><rect x="236" y="96" width="16" height="60" fill="#1E3A8A" stroke="none"/><circle cx="244" cy="86" r="30" fill="#3E6AE1" stroke="none"/><path d="M52 92 L130 36 L208 92 Z" fill="#1E3A8A" stroke="none"/><rect x="66" y="92" width="128" height="62" fill="#FFFFFF" stroke="none"/><rect x="118" y="112" width="26" height="42" fill="#3E6AE1" stroke="none"/><rect x="78" y="106" width="28" height="24" fill="#BFD0F8" stroke="none"/><rect x="156" y="106" width="28" height="24" fill="#BFD0F8" stroke="none"/><path d="M40 176 L96 120" stroke="#1E3A8A" stroke-width="9"/><circle cx="102" cy="114" r="12" fill="none" stroke="#1E3A8A" stroke-width="7"/></svg></div><h3>Home Services</h3><p>HVAC, plumbing, electricians, roofing, cleaning</p></div>
+<div class="tile"><div class="art"><svg viewBox="0 0 300 200" aria-hidden="true"><rect x="0" y="160" width="300" height="40" fill="#8FA9F2" stroke="none"/><rect x="60" y="70" width="120" height="90" fill="#FFFFFF" stroke="none"/><path d="M60 70 H180 M60 100 H180 M60 130 H180 M100 70 V160 M140 70 V160" stroke="#3E6AE1" stroke-width="3"/><path d="M200 160 V30 H270 M200 30 L240 8 M270 30 V70" stroke="#1E3A8A" stroke-width="7"/><rect x="262" y="70" width="16" height="12" fill="#3E6AE1" stroke="none"/><path d="M52 62 A26 26 0 0 1 104 62 Z" fill="#3E6AE1" stroke="none"/><rect x="44" y="62" width="68" height="9" rx="4" fill="#1E3A8A" stroke="none"/></svg></div><h3>Contractors</h3><p>General contractors, remodeling, landscaping, painting</p></div>
+<div class="tile"><div class="art"><svg viewBox="0 0 300 200" aria-hidden="true"><rect x="0" y="164" width="300" height="36" fill="#8FA9F2" stroke="none"/><rect x="128" y="46" width="14" height="112" fill="#1E3A8A" stroke="none"/><rect x="100" y="152" width="70" height="14" rx="4" fill="#1E3A8A" stroke="none"/><circle cx="135" cy="42" r="12" fill="#3E6AE1" stroke="none"/><path d="M62 62 H208" stroke="#1E3A8A" stroke-width="8"/><path d="M76 66 L54 118 M76 66 L98 118 M194 66 L172 118 M194 66 L216 118" stroke="#3E6AE1" stroke-width="3"/><path d="M46 118 H106 A30 24 0 0 1 46 118 Z" fill="#3E6AE1" stroke="none"/><path d="M164 118 H224 A30 24 0 0 1 164 118 Z" fill="#3E6AE1" stroke="none"/></svg></div><h3>Law Firms</h3><p>Personal injury, family law, estate planning, criminal defense</p></div>
+<div class="tile"><div class="art"><svg viewBox="0 0 300 200" aria-hidden="true"><rect x="0" y="164" width="300" height="36" fill="#8FA9F2" stroke="none"/><path d="M110 40 C130 28 148 40 150 40 C152 40 170 28 190 40 C214 54 206 92 196 118 C190 136 188 160 176 160 C164 160 164 130 150 130 C136 130 136 160 124 160 C112 160 110 136 104 118 C94 92 86 54 110 40 Z" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="6"/><path d="M122 62 C130 54 140 56 144 62" stroke="#BFD0F8" stroke-width="6"/><path d="M232 52 V84 M216 68 H248" stroke="#3E6AE1" stroke-width="8"/><path d="M44 88 L56 88 L62 72 L72 104 L80 84 H92" stroke="#3E6AE1" stroke-width="5"/></svg></div><h3>Health &amp; Wellness</h3><p>Dentists, med spas, chiropractors, clinics</p></div>
 </div>
 </div>
 </section>
@@ -270,6 +336,36 @@ var s=document.getElementById('site').value.trim(),m=document.getElementById('ma
 if(!s||m.indexOf('@')<1){return}
 document.getElementById('ok').style.display='block';
 });
+
+(function(){
+var $=function(i){return document.getElementById(i)};
+var sc=document.querySelectorAll('.demo .sc'),arc=$('arc'),T=[],reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function show(n){sc.forEach(function(e,i){e.classList.toggle('on',i===n)})}
+function at(ms,f){T.push(setTimeout(f,ms))}
+function count(el,to,ms){var t0=null,from=parseFloat(el.textContent)||0;function st(t){if(!t0)t0=t;var p=Math.min((t-t0)/ms,1);el.textContent=Math.round(from+(to-from)*p);if(p<1)requestAnimationFrame(st)}requestAnimationFrame(st)}
+function gauge(v,col,label,msg,bg,fg){arc.style.stroke=col;arc.style.strokeDashoffset=251.3*(1-v/100);count($('gnum'),v,1400);$('glab').textContent=label;var b=$('gbox');b.textContent=msg;b.style.background=bg;b.style.color=fg}
+function overview(){
+arc.style.strokeDashoffset=251.3;$('gnum').textContent='0';
+['k1','k2','k3','n1','n2'].forEach(function(i){$(i).textContent='0'});$('b1').style.width='0';$('b2').style.width='0';
+at(300,function(){gauge(34,'#E5A100','Low','Rarely mentioned in AI answers compared to competitors','#FFF3D6','#6B4B00');count($('k1'),42,1400);count($('k2'),61,1400);count($('k3'),38,1400);$('b1').style.width='24%';$('b2').style.width='41%';count($('n1'),12,1200);count($('n2'),29,1200)});
+at(3200,function(){gauge(86,'#3E6AE1','Great','Frequently mentioned and often preferred by AI','#E3F8F4','#0B6B5D');count($('k1'),118,1400);count($('k2'),171,1400);count($('k3'),96,1400);$('b1').style.width='62%';$('b2').style.width='84%';count($('n1'),44,1200);count($('n2'),76,1200)});
+}
+function run(){
+T.forEach(clearTimeout);T=[];
+$('typed').textContent='';$('rs').classList.remove('on');$('tr1').classList.remove('hl');$('dbtn').classList.remove('p');
+show(0);
+var txt='yourcompany.com';
+for(var i=1;i<=txt.length;i++)(function(i){at(500+i*85,function(){$('typed').textContent=txt.slice(0,i)})})(i);
+at(2200,function(){$('dbtn').classList.add('p')});
+at(2450,function(){$('dbtn').classList.remove('p')});
+at(2700,function(){show(1);overview()});
+at(7600,function(){show(2);$('tr1').classList.add('hl')});
+at(9000,function(){$('rs').classList.add('on')});
+at(13200,run);
+}
+if(reduce){show(1);arc.style.strokeDashoffset=251.3*(1-.86);arc.style.stroke='#3E6AE1';$('gnum').textContent='86';$('glab').textContent='Great';$('gbox').textContent='Frequently mentioned and often preferred by AI';$('k1').textContent='118';$('k2').textContent='171';$('k3').textContent='96';$('b1').style.width='62%';$('b2').style.width='84%';$('n1').textContent='44';$('n2').textContent='76';document.querySelectorAll('.wv path').forEach(function(p){p.style.strokeDashoffset=0});document.querySelectorAll('.seg i').forEach(function(i){i.style.width=i.style.getPropertyValue('--w')})}
+else{var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){run()}else{T.forEach(clearTimeout)}},{threshold:.25});io.observe($('demo'))}
+})();
 </script>
 </body>
 </html>
