@@ -80,21 +80,22 @@ h2.t{font-size:clamp(26px,4vw,36px);line-height:1.2;text-align:center;margin-bot
 .ind{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .ind span{background:#fff;border-radius:8px;padding:14px 22px;font-weight:600;font-size:15px}
 /* animated demo */
-.demo{position:relative;background:#fff;border:1px solid #E3E6EF;border-radius:22px;max-width:920px;margin:56px auto 0;min-height:430px;display:grid;box-shadow:0 30px 80px rgba(62,106,225,.2);overflow:hidden;text-align:left}
+.demo{position:relative;background:#fff;border:1px solid #E3E6EF;border-radius:20px;max-width:800px;margin:0 auto;height:420px;box-shadow:0 24px 60px rgba(62,106,225,.2);overflow:hidden;text-align:left}
+.dm{position:absolute;left:0;top:0;width:640px;height:420px;transform-origin:0 0}
 .dtag{position:absolute;top:14px;right:16px;z-index:3;background:var(--ink);color:#fff;font-size:11px;font-weight:600;letter-spacing:.1em;padding:4px 10px;border-radius:6px}
-.sc{grid-area:1/1;padding:34px;opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s;pointer-events:none}
+.sc{position:absolute;inset:0;padding:26px 28px;opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s;pointer-events:none}
 .sc.on{opacity:1;transform:none}
 .s1{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
 .dk{font-size:15px;color:var(--muted);margin-bottom:14px}
-.dt{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.12;letter-spacing:-.01em;max-width:620px;margin-bottom:30px}
+.dt{font-size:38px;font-weight:700;line-height:1.12;letter-spacing:-.01em;max-width:520px;margin-bottom:26px}
 .dq{display:flex;gap:10px;width:100%;max-width:560px;flex-wrap:wrap;justify-content:center}
 .dinp{flex:1 1 220px;height:54px;border-radius:12px;background:#F4F5F8;display:flex;align-items:center;padding:0 18px;font-size:16px;color:var(--ink);text-align:left}
 .cur{display:inline-block;width:2px;height:20px;background:var(--acc);margin-left:2px;animation:bl 1s steps(1) infinite}
 @keyframes bl{50%{opacity:0}}
 .dbtn{height:54px;padding:0 24px;border-radius:12px;background:var(--acc);color:#fff;font-weight:600;display:flex;align-items:center;transition:transform .15s,background .15s}
 .dbtn.p{transform:scale(.94);background:#2f55bd}
-.ov{display:flex;flex-wrap:wrap;gap:28px}
-.gz{flex:1 1 280px;max-width:340px;position:relative}
+.ov{display:flex;gap:26px}
+.gz{flex:0 0 230px;position:relative}
 .gz>svg{width:100%;display:block}
 #arc{transition:stroke-dashoffset 1.4s cubic-bezier(.3,.7,.2,1),stroke .6s}
 .gw{position:relative}
@@ -109,12 +110,12 @@ h2.t{font-size:clamp(26px,4vw,36px);line-height:1.2;text-align:center;margin-bot
 .gr u{flex:1;height:7px;border-radius:4px;background:#E8EAF0;overflow:hidden;text-decoration:none}
 .gr u i{display:block;height:100%;width:0;background:#4C7BF0;border-radius:4px;transition:width 1.2s}
 .gr em{font-style:normal;width:26px;text-align:right;font-weight:600}
-.mt{flex:1 1 320px;min-width:0}
+.mt{flex:1;min-width:0}
 .kp{display:flex;gap:28px;margin-bottom:10px}
 .kp small{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
 .kp s{width:8px;height:8px;border-radius:50%;display:block}
 .kp b{font-size:28px}
-.wv{width:100%;height:96px;display:block;overflow:visible}
+.wv{width:100%;height:84px;display:block;overflow:visible}
 .wv path{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;vector-effect:non-scaling-stroke}
 .s2.on .wv path{animation:dr 2s ease forwards}
 .s2.on .wv path:nth-child(2){animation-delay:.2s}
@@ -133,7 +134,6 @@ h2.t{font-size:clamp(26px,4vw,36px);line-height:1.2;text-align:center;margin-bot
 .rs{display:grid;grid-template-columns:1fr 1.4fr 110px;gap:16px;margin-top:14px;padding:16px;border:2px solid #12B5A0;border-radius:10px;background:#F2FBF9;font-size:14px;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
 .rs.on{opacity:1;transform:none}
 .rs small{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
-@media(max-width:700px){.demo{min-height:0}.s1{min-height:360px}.sc{padding:54px 20px 26px}.gz{max-width:260px;margin:0 auto}.ov{gap:18px}.rs{grid-template-columns:1fr;gap:10px}.tb .th,.tb .tr{grid-template-columns:1fr 64px 64px;font-size:13px}.s2 .mt .wv{height:70px}}
 
 .tiles{display:flex;flex-wrap:wrap;gap:16px}
 .tile{flex:1 1 220px;background:#fff;color:var(--ink);border-radius:16px;padding:14px 14px 28px}
@@ -175,6 +175,7 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 <div class="wrap">
 <div class="demo" id="demo" aria-label="Animated sample of an AI visibility check">
 <div class="dtag">SAMPLE DATA</div>
+<div class="dm" id="dm">
 <div class="sc s1 on">
 <div class="dk">AI visibility check</div>
 <div class="dt">See who AI recommends in your market</div>
@@ -208,6 +209,7 @@ footer{background:#000;color:#C8C8C8;text-align:center;padding:32px 24px;font-si
 <div class="tr"><span>family dentist open saturday</span><span>37</span><span>12</span></div>
 </div>
 <div class="rs" id="rs"><div><small>Prompt</small>Who is the best emergency plumber near me?</div><div><small>AI response</small>...some highly rated options include Competitor 1 and Your Business.</div><div><small>Your business</small><b>Mentioned</b></div></div>
+</div>
 </div>
 </div>
 </div>
@@ -299,6 +301,8 @@ document.getElementById('ok').style.display='block';
 });
 (function(){
 var $=function(i){return document.getElementById(i)};
+function fit(){var d=$('demo'),k=d.clientWidth/640;$('dm').style.transform='scale('+k+')';d.style.height=(420*k)+'px'}
+fit();window.addEventListener('resize',fit);
 var sc=document.querySelectorAll('.demo .sc'),arc=$('arc'),T=[],reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function show(n){sc.forEach(function(e,i){e.classList.toggle('on',i===n)})}
 function at(ms,f){T.push(setTimeout(f,ms))}
